@@ -1,6 +1,9 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-
+@import url(reset.css);
+@import url(base.css);
+@import url(layout.css);
+@import url(modules.css);
 /*
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
@@ -91,7 +94,7 @@ input, select, textarea {
 		color: #888;
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		/* body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -100,7 +103,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-		}
+		} */
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
@@ -255,7 +258,12 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
+			/* @media screen and (max-width: 768px) {
 
+				.container {
+					width: 100%;
+				} */
+	
 		}
 
 /* Row */
@@ -2368,7 +2376,7 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 768px) {
 
 		/* Basic */
 
@@ -2401,9 +2409,9 @@ input, select, textarea {
 				font-size: 1.25em;
 			}
 
-		/* Header */
+		Header 
 
-			#header {
+			 #header {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -2529,7 +2537,7 @@ input, select, textarea {
 			}
 
 		/* Main */
-
+/* 
 			#main {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
@@ -2541,7 +2549,7 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
 				margin-left: 0;
-			}
+			} */
 
 				#main > section {
 					padding: 3em 0;
@@ -2552,6 +2560,17 @@ input, select, textarea {
 				}
 
 	}
+
+	/* tablet mode */
+
+@media(max-width: 768px) {
+	#nav ul{
+		position: fixed;
+		
+	}
+
+}
+
 
 /* Mobile */
 
@@ -2609,3 +2628,5 @@ input, select, textarea {
 				}
 
 	}
+
+
